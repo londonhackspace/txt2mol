@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="XCopy"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="XCopy"
+			DisplayName="XCopy"
+			CommandLine="xcopy [AllOptions] [AdditionalOptions] &quot;$(InputPath)&quot; &quot;$(OutDir)\&quot;"
+			Outputs="$(OutDir)$(InputFileName)"
+			FileExtensions="*.dll;*.txt"
+			ExecutionDescription="Copying files..."
+			BatchingSeparator=""
+			>
+			<Properties>
+				<BooleanProperty
+					Name="NoConfirmation"
+					IsReadOnly="true"
+					DisplayName="No Confirmation"
+					Switch="/y"
+					DefaultValue="true"
+				/>
+				<BooleanProperty
+					Name="Quiet"
+					DisplayName="Quiet"
+					Switch="/q"
+					DefaultValue="true"
+				/>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>
