@@ -1,0 +1,9 @@
+syntax: glob
+*~
+Release/
+Debug/
+*.swp
+*.ncb
+*.suo
+txt2mol/Release
+txt2mol/Debug
